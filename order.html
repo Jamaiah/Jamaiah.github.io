@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Order</title>
+    <!--Bootstrap CDN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+</head>
+<body>
+    <div class="container logo">
+        <div class="row row-logo">
+            <div class="col-12 col-logo">
+                <a href="index.html"><img src="image/petlogo3.jpg" alt="logo" class="mx-auto d-block" height="190"></a>
+            </div>
+        </div>
+    </div>
+    <h1>Pets World</h1>
+    <!--Retreived from-https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_navbar_dropdown&stacked=h-->
+    <nav class="navbar navbar-expand-sm bg-light justify-content-center">
+
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="cats.html">Cats</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="dogs.html">Dogs</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="shop.html" id="navbardrop" data-toggle="dropdown">
+                    Shop
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="CatShop.html">For Cats</a>
+                    <a class="dropdown-item" href="DogShop.html">For Dogs</a>
+                    <a class="dropdown-item" href="tracking_page.html">Tracking Page</a>
+                    <a class="dropdown-item" href="order.html">Order</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+        </ul>
+
+    </nav>
+    <h1>Aula Cervantes' Past Orders:</h1><br><br>
+    <h3 class="details">Current order:</h3>
+    <div class="container current_orders">
+        <div class="row order_bar">
+            <div class="col-2 my-col1b">
+                Order Number
+            </div>
+            <div class="col-2 my-col1b">
+                Date of Order
+            </div>
+            <div class="col-4 my-col1b">
+                Ordered Items
+            </div>
+            <div class="col-2 my-col1b">
+                Total
+            </div>
+            <div class="col-2 my-col1b">
+                Order Status
+            </div>
+        </div>
+        <div class="row  my-order_1">
+            <div class="col-2 my_col_1">
+                <a href="tracking_page.html">WXZ1258</a>
+            </div>
+            <div class="col-2 my_col_1">
+                07 July 2019
+            </div>
+            <div class="col-4 my_col1">
+                <img src="image/bone_kong.jpeg" width="100" height="87" alt="KONG brand dog bone">
+                <img src="image/chicken_pate.jpeg" width="100" height="52" alt="Purrfect Bistro - Chicken Pate">
+                <img src="image/plaque_powder.jpeg" width="100" height="127" alt="ProDen - Plaque Off Powder">
+            </div>
+            <div class="col-2 my_col_1">
+                RM41.60
+            </div>
+            <div class="col-2 my_col_1">
+                Shipping
+            </div>
+        </div>
+    </div>
+    <h3 class="details">Past Orders:</h3>
+    <div class="container past_orders">
+        <div class="row order_bar1">
+            <div class="col-3 my-col2b">
+                Order Number
+            </div>
+            <div class="col-3 my-col2b">
+                Date of Order
+            </div>
+            <div class="col-3 my-col2b">
+                Total
+            </div>
+            <div class="col-3 my-col2b">
+                Order Status
+            </div>
+        </div>
+        <div class="row  my-order2">
+            <div class="col-3 my-col2">
+                <a href="#">WXZ1247</a>
+            </div>
+            <div class="col-3 my-col2">
+                03 July 2019
+            </div>
+            <div class="col-3 my-col2">
+                RM 71.90
+            </div>
+            <div class="col-3 my-col2">
+                Completed
+            </div>
+        </div>
+        <div class="row  my-order3">
+            <div class="col-3 my-col2">
+                <a href="#">WXZ1227</a>
+            </div>
+            <div class="col-3 my-col2">
+                15 June 2019
+            </div>
+            <div class="col-3 my-col2">
+                RM 90.80
+            </div>
+            <div class="col-3 my-col2">
+                Completed
+            </div>
+        </div>
+        <div class="row  my-order4">
+            <div class="col-3 my-col2">
+                <a href="#">WXZ1197</a>
+            </div>
+            <div class="col-3 my-col2">
+                03 June 2019
+            </div>
+            <div class="col-3 my-col2">
+                RM 20.70
+            </div>
+            <div class="col-3 my-col2">
+                Completed
+            </div>
+        </div>
+        <div class="row  my-order5">
+            <div class="col-3 my-col2">
+                <a href="#">WXZ1177</a>
+            </div>
+            <div class="col-3 my-col2">
+                28 May 2019
+            </div>
+            <div class="col-3 my-col2">
+                RM 46.70
+            </div>
+            <div class="col-3 my-col2">
+                Completed
+            </div>
+        </div>
+    </div>
+    <br />
+    <br />
+
+
+    <footer>
+        All Rights Reserved &copy; 2019
+    </footer>
+</body>
+</html>

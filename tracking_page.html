@@ -1,0 +1,201 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Pet World</title>
+    
+    <!--Bootstrap CDN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <div class="container logo">
+        <div class="row row-logo">
+            <div class="col-12 col-logo">
+                <a href="index.html"><img src="image/petlogo3.jpg" alt="logo" class="mx-auto d-block" height="190"></a>
+            </div>
+        </div>
+    </div>
+    <h1>Pets World</h1>
+    
+    <!--Retreived from-https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_navbar_dropdown&stacked=h-->
+    <nav class="navbar navbar-expand-sm bg-light justify-content-center">
+
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="cats.html">Cats</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="dogs.html">Dogs</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="shop.html" id="navbardrop" data-toggle="dropdown">
+                    Shop
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="CatShop.html">For Cats</a>
+                    <a class="dropdown-item" href="DogShop.html">For Dogs</a>
+                    <a class="dropdown-item" href="tracking_page.html">Tracking Page</a>
+                    <a class="dropdown-item" href="order.html">Order</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+        </ul>
+
+    </nav>
+
+    <h2 class="details">Order details</h2>
+    <h4>WXZ1258</h4>
+    <div class="adress">
+        <h5>Shipment address:</h5>
+        <p>
+            Level 1-7, Kompleks Metro Pudu,<br>
+            1, Jalan Metro Pudu 2,<br>
+            Fraser Business Park,<br>
+            55200, Wilayah Persekutuan Kuala Lumpur
+        </p>
+        <h5>Ordered on:</h5>
+        <p>
+            June 3,2019 at3.30pm
+        </p>
+    </div>
+    <h3 class="details">Order Progress</h3>
+
+    <!--Retreived from -https://bootsnipp.com/snippets/V14B-->
+    <div class="row shop-tracking-status">
+        <div class="col-md-12">
+            <div class="well">
+                <div class="order-status">
+
+                    <div class="order-status-timeline">
+                        <!-- class names: c0 c1 c2 c3 and c4 -->
+                        <div class="order-status-timeline-completion c3"></div>
+                    </div>
+
+                    <div class="image-order-status image-order-status-new active img-circle">
+                        <span class="status">Accepted</span>
+                        <div class="icon"></div>
+                    </div>
+                    <div class="image-order-status image-order-status-active active img-circle">
+                        <span class="status">In progress</span>
+                        <div class="icon"></div>
+                    </div>
+                    <div class="image-order-status image-order-status-intransit active img-circle">
+                        <span class="status">Shipped</span>
+                        <div class="icon"></div>
+                    </div>
+                    <div class="image-order-status image-order-status-delivered active img-circle">
+                        <span class="status">Delivered</span>
+                        <div class="icon"></div>
+                    </div>
+                    <div class="image-order-status image-order-status-completed active img-circle">
+                        <span class="status">Completed</span>
+                        <div class="icon"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <br /><br />
+
+    <h2 class="details">Order Details</h2>
+    <div class="container my-container">
+        <div class="row my-row-order">
+            <div class="col-6 my-col-order1">
+                &nbsp; &nbsp; Product Picture
+            </div>
+            <div class="col-3 my-col-order">
+                Product Name
+            </div>
+            <div class="col-3 my-col-order">
+                Product Price
+            </div>
+        </div>
+        <div class="row my-row-1">
+            <div class="col-6 my-col-img">
+                <img src="image/bone_kong.jpeg" width="200" height="100" alt="KONG brand dog bone">
+            </div>
+            <div class="col-3 my-col">
+                <br>
+                Kong - Rubber Bone Toy
+            </div>
+            <div class="col-3 my-col">
+                <br>
+                RM 10.90
+            </div>
+        </div>
+        <br>
+        <div class="row my-row-2">
+            <div class="col-6 my-col-img">
+                <img src="image/chicken_pate.jpeg" width="200" height="106" alt="Purrfect Bistro - Chicken Pate">
+            </div>
+            <div class="col-3 my-col">
+                <br>
+                Purrfect Bistro - Chicken Pate
+            </div>
+            <div class="col-3 my-col">
+                <br>
+                RM 13.50
+            </div>
+        </div>
+        <br>
+        <div class="row my-row-3">
+            <div class="col-6 my-col-img">
+                <img src="image/plaque_powder.jpeg" width="200" height="210" alt="ProDen - Plaque Off Powder">
+            </div>
+            <div class="col-3 my-col">
+                <br>
+                ProDen - Plaque Off Powder
+            </div>
+            <div class="col-3 my-col">
+                <br>
+                RM 17.20
+            </div>
+        </div>
+        <div class="row total">
+            <div class="col-6 my-col-total">
+            </div>
+            <div class="col-3 my-col-total">
+                Total
+            </div>
+            <div class="col-3 my-col-total">
+                RM 41.60
+            </div>
+        </div>
+    </div>
+
+    <!--https://baymard.com/ecommerce-design-examples/63-order-tracking-page/3866-target-->
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <footer>
+        All Rights Reserved &copy; 2019
+    </footer>
+</body>
+</html>

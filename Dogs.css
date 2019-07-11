@@ -1,0 +1,111 @@
+/*Header*/
+body { min-width: 1280px;}
+header { position: relative;height: 100px; text-align: center;}
+header h1 { position: absolute; left:50px; top: 0; padding: 14px 0 0;}
+header h1 a{ display: block;width: 110px; height: 48px; color: transparent;}
+header .lnb li { display: inline-block;}
+header .lnb li a {display: block; height: 81px; padding: 0 35px; font-size: 17px; color: #333; line-height: 81px;}
+header .lnb li a:hover { color: #2d5b79; font-weight: bold;}
+header .lnb li a span { position: relative;}
+header .lnb li a:hover span:after { content: ""; display: block; position: absolute; left: 0; bottom:-9px;  width: 100%; height: 1px; background: #2d5b79;}
+
+/*About DOGS*/
+.Dog a { display: block;color: #800080; font-size: 25px;}
+.Dog a:hover { color: #2d5b79; font-weight: bold;}
+    .Dog a:before {
+        content: "";
+        display: block;
+        margin: 0 0 26px;
+        width: 120px;
+        height: 120px;
+        background: url(image/dogdog.jpg) no-repeat;
+    }
+.Dog ul { padding: 46px 0 41px; text-align: center; font-size: 0;}
+.Dog li { display: inline-block; padding: 0 55px; text-align: center;}
+
+
+/*Magazine*/
+.magazine {overflow: hidden; position: relative; height: 670px; background:  #b3d9ff;}
+.magazine h2 { padding: 50px 0 16px; font-size: 35px; color: #000; text-align: center; line-height: 100%;}
+.magazine p { text-align: center; font-size: 22px; color: #003300; line-height: 100%;}
+
+.magazine .slide_box .left { overflow: hidden; position: relative; float: left; width: 800px; height: 430px;}
+.magazine .slide_box .left img { width: 100%; }
+.magazine .slide_box .left div { position: absolute; right: 0; top: 0;   padding: 47px 20px 0; width: 200px; height: 100%; background: rgba(0,0,0,0.5); box-sizing: border-box;}
+.magazine .slide_box .left div h3 { color: #fff; font-size:25px; line-height: 32px;}
+.magazine .slide_box .left div h3 span { display: block; font-weight: normal;}
+.magazine .slide_box .left div p { padding: 9px 0 0; font-size: 16px; color: #fff; text-align: left; line-height: 24px;}
+.magazine .slide_box .left div a { position: absolute; right: 20px; bottom: 40px; display: block;width:160px; height: 45px; border: 1px solid #fff; font-size: 16px; color: #fff; text-align: center; line-height: 45px;}
+.magazine .slide_box .right { float: right; padding: 20px 20px 0; width: 500px; height: 430px; background: #fff; box-sizing: border-box;}
+.magazine .slide_box .right li { padding: 0 0 20px;}
+.magazine .slide_box .right li a { display: table; width: 100%; }
+.magazine .slide_box .right li a div { display: table-cell; position: relative; padding: 0 0 0 100px; height: 82px; font-size: 16px; color: #333; vertical-align: middle;}
+.magazine .slide_box .right li a img { position: absolute; left: 0; top: 0;}
+.magazine .slide_box .right li a strong { display: block;font-size: 16px; color: #000;}
+
+
+
+
+/*side bar*/
+
+* {padding:0;margin:0;}
+input[id="menuicon"] {display:none;}
+input[id="menuicon"] + ul {display:block;position:fixed;right:0;top:50%;transform:translateY(-50%);transition:all .35s;text-align:right;}
+input[id="menuicon"] + ul > li {display:block;width:50px;height:50px;border:1px solid #f1f1f1;position:relative;margin-top:-1px;}
+input[id="menuicon"] + ul > li > a {display:block;width:auto;height:50px;overflow:hidden;transition:all .35s;}
+input[id="menuicon"] + ul > li > label {display:block;cursor:pointer;width:auto;height:50px;background:#dadada;}
+input[id="menuicon"] + ul > li:nth-child(1) label span {display:block;position:absolute;width:50%;height:3px;border-radius:30px;background:#333;transition:all .35s;}
+input[id="menuicon"] + ul > li:nth-child(1) label span:nth-child(1) {top:30%;left:50%;transform:translateX(-50%);}
+input[id="menuicon"] + ul > li:nth-child(1) label span:nth-child(2) {top:50%;left:50%;transform:translate(-50%,-50%);}
+input[id="menuicon"] + ul > li:nth-child(1) label span:nth-child(3) {bottom:30%;left:50%;transform:translateX(-50%);}
+input[id="menuicon"]:checked + ul {z-index:2;right:300px;}
+input[id="menuicon"]:checked + ul > li:nth-child(1) label {z-index:2;right:300px;}
+input[id="menuicon"]:checked + ul > li:nth-child(1) label span:nth-child(1) {top:50%;left:50%;transform:translate(-50%,-50%) rotate(45deg);}
+input[id="menuicon"]:checked + ul > li:nth-child(1) label span:nth-child(2) {opacity:0;}
+input[id="menuicon"]:checked + ul > li:nth-child(1) label span:nth-child(3) {bottom:50%;left:50%;transform:translate(-50%,50%) rotate(-45deg);}
+div[class="sidebar"] {width:300px;height:100%;background:#f5f5f5;position:fixed;top:0;right:-300px;z-index:1;transition:all .35s;}
+input[id="menuicon"]:checked + ul + div {right:0;}
+
+/*notice board*/
+.notice { padding: 0 0 100px;}
+.notice > div { width: 1180px; margin: 0 auto; padding: 55px 0;}
+.notice > div .top > ul { float: left;}
+.notice > div .top > ul a { display: block; padding: 100px 0 0; width: 280px; height: 280px; text-align: center; box-sizing: border-box; font-size: 17px; font-weight: bold; color: #fff; transition: all 0.5s;}
+.notice > div .top > ul a span {display: block; position: relative; top:10px; opacity: 0;  padding: 20px 0 0; font-weight: normal; font-size: 14px; transition: all 0.5s;}
+.notice > div .top > ul a:hover { background: rgba(45,91,121,0.3);}
+.notice > div .top > ul a:hover span {  top: 0; opacity: 1;}
+.notice > div .top > ul li { float: left; padding: 0 20px 0 0; }
+.notice > div .top > ul li:nth-child(1) { background: url(image/dog6.jpg) no-repeat;}
+.notice > div .top > ul li:nth-child(2) { background: url(image/dog8.jpg) no-repeat;}
+.notice > div .top > ul li:nth-child(2) a { color: #000;}
+.notice > div .top > ul li:nth-child(3) { background: url(image/dog11.jpg) no-repeat;}
+
+/*notice board2*/
+.notice2 { padding: 0 0 100px;}
+.notice2 > div { width: 1180px; margin: 0 auto; padding: 55px 0;}
+.notice2 > div .top > ul { float: left;}
+.notice2 > div .top > ul a { display: block; padding: 100px 0 0; width: 280px; height: 280px; text-align: center; box-sizing: border-box; font-size: 17px; font-weight: bold; color: #fff; transition: all 0.5s;}
+.notice2 > div .top > ul a span {display: block; position: relative; top:10px; opacity: 0;  padding: 20px 0 0; font-weight: normal; font-size: 14px; transition: all 0.5s;}
+.notice2 > div .top > ul a:hover { background: rgba(45,91,121,0.3);}
+.notice2 > div .top > ul a:hover span {  top: 0; opacity: 1;}
+.notice2 > div .top > ul li { float: left; padding: 0 20px 0 0; }
+.notice2 > div .top > ul li:nth-child(1) { background: url(image/dog10.jpg) no-repeat;}
+.notice2 > div .top > ul li:nth-child(2) { background: url(image/dog7.jpg) no-repeat;}
+.notice2 > div .top > ul li:nth-child(2) a { color: #000;}
+.notice2 > div .top > ul li:nth-child(3) { background: url(image/dog9.jpg) no-repeat;}
+
+
+.notice article > div { float: left; position: relative;width: 580px; background: #b3d9ff;}
+.notice article > div a { font-size: 16px; color:#424241;}
+.notice article > div a p { font-size: 12px; color:#979797;}
+.notice article > div h2 { height: 77px; border-bottom: 2px solid #fff; line-height: 77px; font-size: 24px; color: #2d5b79; text-align: center;}
+.notice article > div.left ul li { float: left; padding: 35px; width: 50%; border-left: 1px solid #fff; box-sizing: border-box;}
+.notice article > div.left ul li:first-child { border-left: none;}
+.notice article > div.left ul li span { display: block; width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; line-height: 100%; }
+.notice article > div.left ul li p { padding: 22px 0 16px; line-height: 100%;}
+.notice article > div.left ul li div { line-height: 21px;}
+.notice article > div.right { float: right;}
+.notice article > div.right ul li {position: relative; border-bottom: 1px solid #fff;}
+.notice article > div.right ul li:last-child { border-bottom: none;}
+.notice article > div.right ul li a { display: block;overflow: hidden; width: 400px; height: 60px; line-height: 60px; text-indent: 30px; white-space: nowrap; text-overflow: ellipsis;}
+.notice article > div.right p { position: absolute; right: 30px; top: 0;}
